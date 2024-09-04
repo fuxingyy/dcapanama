@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://dcapanama.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://dcapanama.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dcapanama.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.dcapanama.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dcapanama.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dcapanama.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dcapanama.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.dcapanama.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
